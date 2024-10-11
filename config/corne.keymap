@@ -6,6 +6,7 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/rgb.h>
 
 / {
     combos {
@@ -48,10 +49,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E     &kp R      &kp T          &kp Y        &kp U      &kp I      &kp O    &kp P     &kp BSPC
-&kp LCTRL  &kp A  &kp S  &kp D     &kp F      &kp G          &kp H        &kp J      &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C     &kp V      &kp B          &kp N        &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                         &kp LGUI  &kp LSHFT  &lt 1 SPACE    &lt 2 ENTER  &kp RSHFT  &kp RALT
+&kp TAB    &kp Q  &kp W  &kp E     &kp R      &kp T          &kp Y        &kp U                &kp I      &kp O    &kp P     &kp BSPC
+&kp LCTRL  &kp A  &kp S  &kp D     &kp F      &kp G          &kp H        &kp J                &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z  &kp X  &kp C     &kp V      &kp B          &kp N        &kp M                &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+                         &kp LGUI  &kp LSHFT  &lt 1 SPACE    &lt 2 ENTER  &mt RSHFT BACKSPACE  &kp RALT
             >;
         };
 
@@ -63,9 +64,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_4  &kp KP_NUMBER_5     &kp KP_NUMBER_6    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_N0  &kp DEL
-&trans  &kp N1           &kp N2           &kp N3           &kp N4           &kp N5              &kp N6             &kp N7           &kp N8           &kp N9           &kp N0     &trans
-&trans  &kp GRAVE        &kp MINUS        &trans           &kp BACKSLASH    &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp EQUAL        &trans           &trans           &trans     &trans
+&trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_4  &kp KP_NUMBER_5     &kp KP_NUMBER_6    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9       &kp KP_N0              &kp DEL
+&trans  &kp EXCLAMATION  &kp AT           &kp HASH         &kp DOLLAR       &kp PERCENT         &kp CARET          &kp AMPS         &kp ASTERISK     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH
+&trans  &kp GRAVE        &kp MINUS        &trans           &kp BACKSLASH    &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp EQUAL        &trans           &trans                &kp MINUS              &kp GRAVE
                                           &kp LGUI         &trans           &kp SPACE           &kp RET            &trans           &kp RALT
             >;
         };
@@ -75,7 +76,16 @@
 &trans  &trans          &kp UP    &trans     &trans  &kp C_VOLUME_UP      &trans    &trans    &trans  &trans     &trans  &trans
 &trans  &kp LEFT_ARROW  &kp DOWN  &kp RIGHT  &trans  &kp C_MUTE           &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
 &trans  &trans          &trans    &trans     &trans  &kp C_VOLUME_DOWN    &trans    &trans    &trans  &trans     &trans  &trans
-                                  &trans     &trans  &trans               &trans    &trans    &trans
+                                  &trans     &trans  &trans               &trans    &trans    &mo 3
+            >;
+        };
+
+        fn {
+            bindings = <
+&kp F1           &kp F2  &kp F3  &kp F4  &kp F5  &kp F6    &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+&trans           &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
+&rgb_ug RGB_TOG  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
+                                 &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
