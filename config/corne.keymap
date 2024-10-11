@@ -67,7 +67,7 @@
 &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_4  &kp KP_NUMBER_5     &kp KP_NUMBER_6    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9       &kp KP_N0              &kp DEL
 &trans  &kp EXCLAMATION  &kp AT           &kp HASH         &kp DOLLAR       &kp PERCENT         &kp CARET          &kp AMPS         &kp ASTERISK     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH
 &trans  &kp GRAVE        &kp MINUS        &trans           &kp BACKSLASH    &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp EQUAL        &trans           &trans                &kp MINUS              &kp GRAVE
-                                          &kp LGUI         &trans           &kp SPACE           &kp RET            &trans           &kp RALT
+                                          &kp LGUI         &trans           &kp SPACE           &kp RET            &trans           &mo 3
             >;
         };
 
@@ -76,7 +76,7 @@
 &trans  &trans          &kp UP    &trans     &trans  &kp C_VOLUME_UP      &trans    &trans    &trans  &trans     &trans  &trans
 &trans  &kp LEFT_ARROW  &kp DOWN  &kp RIGHT  &trans  &kp C_MUTE           &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
 &trans  &trans          &trans    &trans     &trans  &kp C_VOLUME_DOWN    &trans    &trans    &trans  &trans     &trans  &trans
-                                  &trans     &trans  &trans               &trans    &trans    &mo 3
+                                  &trans     &trans  &trans               &trans    &trans    &trans
             >;
         };
 
