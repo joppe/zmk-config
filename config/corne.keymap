@@ -17,33 +17,13 @@
             key-positions = <19 20>;
         };
 
-        left_mo_1 {
-            bindings = <&mo 2>;
-            key-positions = <13 14>;
-        };
-
-        right_mo_1 {
-            bindings = <&mo 1>;
-            key-positions = <22 21>;
-        };
-
-        left_mo_2 {
-            bindings = <&mo 4>;
-            key-positions = <16 15>;
-        };
-
-        right_mo_2 {
-            bindings = <&mo 3>;
-            key-positions = <19 20>;
-        };
-
         fn_left {
-            bindings = <&mo 5>;
+            bindings = <&mo 3>;
             key-positions = <4 3>;
         };
 
         fn_right {
-            bindings = <&mo 5>;
+            bindings = <&mo 3>;
             key-positions = <7 8>;
         };
     };
@@ -59,14 +39,14 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB       &kp Q  &kp W  &kp E           &kp R         &kp T        &kp Y      &kp U          &kp I            &kp O    &kp P     &kp BSPC
-&kp LCTRL     &kp A  &kp S  &kp D           &kp F         &kp G        &kp H      &kp J          &kp K            &kp L    &kp SEMI  &kp SQT
-&kp LEFT_ALT  &kp Z  &kp X  &kp C           &kp V         &kp B        &kp N      &kp M          &kp COMMA        &kp DOT  &kp FSLH  &kp ESC
-                            &kp LEFT_SHIFT  &kp LEFT_GUI  &kp SPACE    &kp ENTER  &kp BACKSPACE  &kp RIGHT_SHIFT
+&kp TAB       &kp Q  &kp W  &kp E           &kp R         &kp T          &kp Y        &kp U          &kp I            &kp O    &kp P     &kp ESCAPE
+&kp LCTRL     &kp A  &kp S  &kp D           &kp F         &kp G          &kp H        &kp J          &kp K            &kp L    &kp SEMI  &kp SQT
+&kp LEFT_ALT  &kp Z  &kp X  &kp C           &kp V         &kp B          &kp N        &kp M          &kp COMMA        &kp DOT  &kp FSLH  &kp RIGHT_ALT
+                            &kp LEFT_SHIFT  &kp LEFT_GUI  &lt 1 SPACE    &lt 2 ENTER  &kp BACKSPACE  &kp RIGHT_SHIFT
             >;
         };
 
-        lower_left {
+        lower {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BSPC |
             // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
@@ -74,37 +54,19 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_4  &kp KP_NUMBER_5     &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp EXCLAMATION  &kp AT           &kp HASH         &kp DOLLAR       &kp PERCENT         &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp GRAVE        &kp MINUS        &kp SLASH        &kp LEFT_BRACE   &kp LEFT_BRACKET    &trans  &trans  &trans  &trans  &trans  &trans
-                                          &trans           &trans           &trans              &trans  &trans  &trans
+&trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_4  &kp KP_NUMBER_5     &kp KP_NUMBER_6    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9       &kp KP_NUMBER_0        &trans
+&trans  &kp EXCLAMATION  &kp AT           &kp HASH         &kp DOLLAR       &kp PERCENT         &kp CARET          &kp AMPERSAND    &kp ASTERISK     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH
+&trans  &kp GRAVE        &kp MINUS        &kp SLASH        &kp LEFT_BRACE   &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp PLUS         &kp EQUAL             &kp MINUS              &kp GRAVE
+                                          &trans           &trans           &trans              &trans             &trans           &trans
             >;
         };
 
-        lower_right {
+        raise {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &kp KP_NUMBER_6    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9       &kp KP_N0              &kp DEL
-&trans  &trans  &trans  &trans  &trans  &trans    &kp CARET          &kp AMPS         &kp ASTERISK     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH
-&trans  &trans  &trans  &trans  &trans  &trans    &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp PLUS         &kp EQUAL             &kp MINUS              &kp GRAVE
-                        &trans  &trans  &trans    &trans             &trans           &trans
-            >;
-        };
-
-        raise_left {
-            bindings = <
-&trans  &trans          &kp UP    &trans     &trans  &kp C_VOLUME_UP      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LEFT_ARROW  &kp DOWN  &kp RIGHT  &trans  &kp C_MUTE           &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans          &trans    &trans     &trans  &kp C_VOLUME_DOWN    &trans  &trans  &trans  &trans  &trans  &trans
-                                  &trans     &trans  &trans               &trans  &trans  &trans
-            >;
-        };
-
-        raise_right {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans  &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans  &trans     &trans  &trans
-                        &trans  &trans  &trans    &trans    &trans    &trans
+&trans  &trans          &kp UP    &trans     &trans  &kp C_VOLUME_UP      &trans          &trans          &trans        &trans     &trans  &trans
+&trans  &kp LEFT_ARROW  &kp DOWN  &kp RIGHT  &trans  &kp C_MUTE           &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans  &trans
+&trans  &trans          &trans    &trans     &trans  &kp C_VOLUME_DOWN    &trans          &trans          &trans        &trans     &trans  &trans
+                                  &trans     &trans  &trans               &trans          &trans          &trans
             >;
         };
 
