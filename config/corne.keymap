@@ -35,8 +35,9 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             hold-trigger-key-positions = <6 18 30 39 40 41 19 31 7 8 20 32 33 21 9 10 22 34 35 23 11>;
+            flavor = "tap-preferred";
         };
 
         hmr: homewrow_mods_right {
@@ -45,8 +46,9 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38>;
+            flavor = "tap-preferred";
         };
     };
 
@@ -64,7 +66,7 @@
 &kp TAB         &kp Q         &kp W                &kp E            &kp R            &kp T        &kp Y      &kp U             &kp I             &kp O                 &kp P                  &kp ESCAPE
 &kp LCTRL       &hml LSHFT A  &hml LEFT_CONTROL S  &hml LEFT_ALT D  &hml LEFT_GUI F  &kp G        &kp H      &hmr RIGHT_GUI J  &hmr RIGHT_ALT K  &hmr RIGHT_CONTROL L  &hmr RIGHT_SHIFT SEMI  &kp SQT
 &kp LEFT_SHIFT  &kp Z         &kp X                &kp C            &kp V            &kp B        &kp N      &kp M             &kp COMMA         &kp DOT               &kp FSLH               &kp RIGHT_SHIFT
-                                                   &kp LEFT_GUI     &mo 1            &kp SPACE    &kp ENTER  &kp BACKSPACE     &mo 2
+                                                   &kp LEFT_GUI     &sl 1            &kp SPACE    &kp ENTER  &kp BACKSPACE     &sl 2
             >;
         };
 
